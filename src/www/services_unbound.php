@@ -225,7 +225,7 @@ include_once("head.inc");
 <?php endforeach ?>
                           </select>
                           <div class="hidden" data-for="help_for_active_interface">
-                            <?=gettext("Interface IP addresses used for responding to queries from clients. If an interface has both IPv4 and IPv6 IPs, both are used. Queries to other interface IPs not selected below are discarded. The default behavior is to respond to queries on every available IPv4 and IPv6 address.");?>
+                            <?=gettext("Interface IP addresses used for responding to queries from clients. If an interface has both IPv4 and IPv6 IPs, both are used. Queries to other interface IPs not selected below are discarded. The default behavior is to respond to queries on every available IPv4 and IPv6 address. Changing from the default to explicitly add a dynamic interface (e.g. openvpn, ipsec, dhcp) can cause unbound to malfunction.");?>
                           </div>
                         </td>
                       </tr>
